@@ -1,10 +1,10 @@
 import React from "react";
-
+import Hero from "../../parts/home/Hero"
 export default function Home() {
   return (
     <div>
-      <p className="text-6xl">Hai</p>
-      <p>This is the template</p>
+      <Hero/>
+      
     </div>
   );
 }
