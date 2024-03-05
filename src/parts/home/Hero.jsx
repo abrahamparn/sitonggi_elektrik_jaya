@@ -1,4 +1,3 @@
-import React from "react";
 import BGImage from "../../assets/Image/BGImage.png";
 import Address from "../../assets/Icon/Address.png";
 import Contact from "../../assets/Icon/Contact.png";
@@ -107,7 +106,7 @@ export default function Hero() {
         </div>
         <div className="sm:mt-10 md:mt-0 text-center sm:pt-2 md:pt-16 lg:pt-20 xl:pt-24 sm:ps-8 md:ps-20 lg:ps-24 xl:ps-28 sm:pe-8 md:pe-20 lg:pe-24 xl:pe-28 sm:ms-2 md:ms-16 lg:ms-20 xl:ms-24 sm:me-2 md:me-16 lg:me-20 xl:me-24 flex flex-col sm:gap-10 lg:gap-12 xl:gap-16">
           <p className="text-white sm:text-3xl md:text-4xl lg:text-4xl xl:text-7xl sm:font-bold md:font-normal">
-            <a className="text-yellow_stg">Pilihan Tepat</a> untuk Membangun
+            <a className="text-yellow_stg">Pilihan Tepat</a> untuk <br/> Membangun
             Infrastruktur Anda.
           </p>
           <p className="text-white sm:text-base md:text-base lg:text-lg xl:text-xl font-semibold sm:me-4 md:me-16 lg:me-20 xl:me-36 sm:ms-4 md:ms-16 lg:ms-20 xl:ms-36">
