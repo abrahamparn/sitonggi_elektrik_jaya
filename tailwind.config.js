@@ -6,6 +6,7 @@ export default {
       colors: {
         black_stg: "#1E1E1E",
         yellow_stg: "#FB8C03",
+        skin_stg: "#EEE5D5",
       },
       screens: {
         sm: "375px",
