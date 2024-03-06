@@ -33,7 +33,7 @@ const Contact = () => {
                   className="text-orange-400 text-sm ml-3"
                 >
                   <small className="block">Mail</small>
-                  <strong>https://veilmail.io/e/FkKh7o</strong>
+                  <strong>sitonggie@yahoo.com</strong>
                 </a>
               </li>
             </ul>
