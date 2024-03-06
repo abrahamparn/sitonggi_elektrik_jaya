@@ -1,3 +1,4 @@
+import Contact from "../../parts/home/Contact";
 import Hero from "../../parts/home/Hero";
 import Overview from "../../parts/home/Overview";
 import Project from "../../parts/home/Project";
@@ -9,6 +10,7 @@ export default function Home() {
       <Overview />
       <Project />
       <Testimoni />
+      <Contact />
     </div>
   );
 }
