@@ -10,7 +10,7 @@ const Overview = () => {
     <div className="container mx-auto p-5 my-20">
       {/* Overview Description */}
       <div className="grid grid-cols-1 lg:grid-cols-2 lg:mx-10">
-        <div>
+        <div className="lg:m-5">
           <h2 className="text-4xl md:text-4xl font-bold mb-3">
             Kami Menyediakan Berbagai Kabel <br />
             <span className="text-orange-400">Berkualitas Tinggi</span>
@@ -68,7 +68,7 @@ const Overview = () => {
           </a>
         </div>
         {/* Overview Gallery */}
-        <div className="grid gap-3 md:gap-5 grid-cols-2  mt-10 md:mt-0  mx-auto">
+        <div className="grid gap-3 md:gap-5 grid-cols-2 content-center  mt-10 lg:mt-0 my-auto mx-auto lg:m-5">
           <div className="gallery-1 mx-0 ">
             <img className="" src={Gallery1} />
             <div className={styles.overlayImage1 + " py-2 mt-3"}>

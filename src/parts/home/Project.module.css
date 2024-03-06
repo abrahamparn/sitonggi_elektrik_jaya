@@ -1,0 +1,14 @@
+.projectContainer {
+  background-image: url("../../assets/Image/AnimatedBg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+@media (max-width: 768px) {
+  .projectContainer {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
