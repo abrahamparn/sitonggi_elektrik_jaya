@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <div className="md:py-20 bg-orange-500">
-      <div className="grid sm:grid-cols-2 items-center gap-16 p-8 mx-auto max-w-4xl bg-white shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md text-[#333] ">
+      <div className="grid md:grid-cols-2 items-center gap-16 p-8 mx-auto max-w-4xl bg-white shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md text-[#333] ">
         <div>
           <h4 className="text-3xl font-extrabold">Hubungi Kami</h4>
           <p className="text-sm text-gray-400 mt-3">
@@ -42,7 +42,7 @@ const Contact = () => {
             <h2 className="text-lg font-extrabold">Socials</h2>
             <ul className="flex mt-3 space-x-4">
               <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                <a href="javascript:void(0)">
+                <a href="#">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20px"
@@ -58,7 +58,7 @@ const Contact = () => {
                 </a>
               </li>
               <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                <a href="javascript:void(0)">
+                <a href="#">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20px"
@@ -74,7 +74,7 @@ const Contact = () => {
                 </a>
               </li>
               <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                <a href="javascript:void(0)">
+                <a href="#">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20px"
