@@ -1,4 +1,55 @@
+import React, { useState } from "react";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (
+      !formData.name ||
+      !formData.email ||
+      !formData.subject ||
+      !formData.message
+    ) {
+      withReactContent(Swal).fire({
+        title: <i>Error</i>,
+        text: "Please fill in all fields",
+        icon: "error",
+        confirmButtonColor: "#FB8C03",
+      });
+      return;
+    }
+
+    setShowPopup(true);
+  };
+
+  const showSwal = () => {
+    withReactContent(Swal).fire({
+      title: <i>Email Success</i>,
+      text: "Thank you for sending us your inquiries",
+      icon: "success",
+      confirmButtonColor: "#FB8C03",
+    });
+  };
+  if (showPopup) {
+    showSwal();
+    setShowPopup(false);
+  }
+
   return (
     <div className="md:py-20 bg-orange-500">
       <div className="grid md:grid-cols-2 items-center gap-16 p-8 mx-auto max-w-4xl bg-white shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md text-[#333] ">
@@ -90,29 +141,41 @@ const Contact = () => {
           </div>
         </div>
 
-        <form className="ml-auo space-y-4">
+        <form className="ml-auto space-y-4" onSubmit={handleSubmit}>
           <input
             type="text"
+            name="name"
             placeholder="Name"
+            value={formData.name}
+            onChange={handleChange}
             className="w-full rounded-md py-2.5 px-4 border text-sm outline-[#fb923c]"
           />
           <input
             type="email"
+            name="email"
             placeholder="Email"
+            value={formData.email}
+            onChange={handleChange}
             className="w-full rounded-md py-2.5 px-4 border text-sm outline-[#fb923c]"
           />
           <input
             type="text"
+            name="subject"
             placeholder="Subject"
+            value={formData.subject}
+            onChange={handleChange}
             className="w-full rounded-md py-2.5 px-4 border text-sm outline-[#fb923c]"
           />
           <textarea
             placeholder="Message"
+            name="message"
             rows="6"
+            value={formData.message}
+            onChange={handleChange}
             className="w-full rounded-md px-4 border text-sm pt-2.5 outline-[#fb923c]"
           ></textarea>
           <button
-            type="button"
+            type="submit"
             className="text-white bg-[#fb923c] hover:bg-orange-600 font-semibold rounded-md text-sm px-4 py-2.5 w-full"
           >
             Send
