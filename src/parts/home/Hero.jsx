@@ -2,7 +2,7 @@ import BGImage from "../../assets/Image/BGImage.png";
 import Address from "../../assets/Icon/Address.png";
 import Contact from "../../assets/Icon/Contact.png";
 import Email from "../../assets/Icon/Email.png";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 ("use client");
 
 export default function Hero() {
@@ -26,13 +26,13 @@ export default function Hero() {
     <section className="relative sm:min-h-[580px] lg:min-h-[720px] xl:min-h-[861px] ">
       <img
         src={BGImage}
-        className="absolute top-0 left-0 w-full h-full z-0 object-cover opacity-90"
+        className="absolute top-0 left-0 w-full h-full z-0 object-cover opacity-100"
       />
 
       <div className="relative z-10 h-full bg-gray text-white ">
         <div className="flex flex-row md:hidden p-5  bg-white justify-between">
           <p className="text-yellow_stg font-bold">
-            PT. SITONGGI ELEKTRIK JATA
+            PT. SITONGGI ELEKTRIK JAYA
           </p>
           <button onClick={toggleMenu}>
             <div className="space-y-2">
@@ -45,13 +45,26 @@ export default function Hero() {
         {/* INI BUAT MD KE BAWAH */}
         <div className={`${isMenuOpen ? "block" : "hidden"} md:hidden`}>
           {/* Your menu items here */}
-          <div className="z-50 w-screen h-screen text-black bg-gray-500 ">
+          <div className="z-50 w-screen h-screen text-black bg-white ">
             {/* Menu items can be listed here */}
-            <p className=" p-3 ps-8 text-xl text-yellow_stg ">Beranda</p>
-            <p className=" p-3 ps-8 text-xl">Produk</p>
-            <p className=" p-3 ps-8 text-xl">Proyek</p>
-            <p className=" p-3 ps-8 text-xl">Testimoni</p>
-            <p className=" p-3 ps-8 text-xl">Perusahaan</p>
+            <a
+              href="#"
+              className=" p-3 ps-8 text-xl font-semibold text-yellow_stg "
+            >
+              Beranda
+            </a>
+            <a href="#produk" className=" p-3 ps-8 text-xl font-semibold">
+              Produk
+            </a>
+            <a href="#proyek" className=" p-3 ps-8 text-xl font-semibold">
+              Proyek
+            </a>
+            <a href="#testimoni" className=" p-3 ps-8 text-xl font-semibold">
+              Testimoni
+            </a>
+            <a href="#kontakKami" className=" p-3 ps-8 text-xl font-semibold">
+              Kontak Kami
+            </a>
           </div>
         </div>
         {/* INI BUAT MD KE ATAS */}
@@ -94,11 +107,13 @@ export default function Hero() {
         </div>
         <div className="hidden  flex-row md:flex bg-white md:me-[60px] lg:me-[80px] xl:me-[109px] md:ms-[60px] lg:ms-[80px] xl:ms-[109px] rounded-lg text-black justify-between md:pb-1 md:pt-1 xl:pb-2 xl:pt-2 md:ps-[31px] lg:ps-[51px] md:pe-[31px] lg:pe-[51px] xl:ps-[71px] xl:pe-[71px] border-2 border-yellow_stg">
           <div className="flex flex-row items-center md:gap-4 lg:gap-7 xl:gap-12 md:text-sm lg:text-base lg:font-semibold xl:font-bold ">
-            <p className="text-yellow_stg ">Beranda</p>
-            <p>Produk</p>
-            <p>Proyek</p>
-            <p>Testimoni</p>
-            <p>Perusahaan</p>
+            <a href="#" className="text-yellow_stg">
+              Beranda
+            </a>
+            <a href="#produk">Produk</a>
+            <a href="#proyek">Proyek</a>
+            <a href="#testimoni">Testimoni</a>
+            <a href="#kontakKami">Kontak Kami</a>
           </div>
           <button className="bg-yellow_stg md:pe-6 lg:pe-8 xl:pe-10 md:ps-6 lg:ps-8 xl:ps-10 md:pt-1 lg:pt-2 xl:pt-4 md:pb-1 lg:pb-2 xl:pb-4 rounded-lg text-white">
             Kontak Kami

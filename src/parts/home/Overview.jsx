@@ -70,7 +70,7 @@ const Overview = () => {
         {/* Overview Gallery */}
         <div className="grid gap-3 md:gap-5 grid-cols-2 content-center  mt-10 lg:mt-0 my-auto mx-auto lg:m-5">
           <div className="gallery-1 mx-0 ">
-            <img className="" src={Gallery1} />
+            <img className="rounded-md" src={Gallery1} />
             <div className={styles.overlayImage1 + " py-2 mt-3"}>
               <div className="wrapper flex justify-center">
                 <div className="image-overview">
@@ -95,7 +95,7 @@ const Overview = () => {
                 </div>
               </div>
             </div>
-            <img className="" src={Gallery2} />
+            <img className="rounded-md" src={Gallery2} />
           </div>
         </div>
       </div>

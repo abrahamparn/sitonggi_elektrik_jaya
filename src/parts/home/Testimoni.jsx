@@ -93,7 +93,7 @@ export default function Testimoni() {
   });
   return (
     <div className="bg-skin_stg pb-20">
-      <div className="relative ">
+      <div className="relative" id="testimoni">
         <img src={testimoni_banner} className="object-cover h-[320px] w-full" />
         <div className="absolute top-0 left-0 bg-black w-full h-full flex items-center justify-center bg-opacity-20"></div>
         <div className="absolute top-0 left-0 flex w-full h-full  items-center justify-center">
