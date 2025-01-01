@@ -1,6 +1,6 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouxter } from "react-router-dom";
 import Home from "./views/home/Home";
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Home />,
